@@ -45,15 +45,15 @@ namespace ApplitoolsTutorial
 			config.SetBatch(new BatchInfo("Ultrafast Batch"));
 
 			// Add browsers with different viewports
-			config.AddBrowser(800, 600, BrowserType.CHROME);
-			config.AddBrowser(700, 500, BrowserType.FIREFOX);
-			config.AddBrowser(1600, 1200, BrowserType.IE_11);
-			config.AddBrowser(1024, 768, BrowserType.EDGE_CHROMIUM);
-			config.AddBrowser(800, 600, BrowserType.SAFARI);
+			//config.AddBrowser(800, 600, BrowserType.CHROME);
+			//config.AddBrowser(700, 500, BrowserType.FIREFOX);
+			//config.AddBrowser(1600, 1200, BrowserType.IE_11);
+			//config.AddBrowser(1024, 768, BrowserType.EDGE_CHROMIUM);
+			//config.AddBrowser(800, 600, BrowserType.SAFARI);
 
 			// Add mobile emulation devices in Portrait mode
 			config.AddDeviceEmulation(DeviceName.iPhone_X, ScreenOrientation.Portrait);
-			config.AddDeviceEmulation(DeviceName.Pixel_2, ScreenOrientation.Portrait);
+			config.AddDeviceEmulation(DeviceName.Pixel_2);
 
 			// Set the configuration object to eyes
 			eyes.SetConfiguration(config);
